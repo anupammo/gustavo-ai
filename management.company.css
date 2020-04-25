@@ -1,0 +1,25 @@
+.bg-light {
+    background-color: #e6e6e6!important;
+}
+table#company-management tbody tr td {
+    font-size: 14px !important;
+}
+table#company-management thead tr th {
+    font-size: 13px;
+}
+table#company-management thead tr th {
+    font-size: 13px;
+}
+.table th {
+    border-top: none;
+}
+.table thead th {
+    border-bottom: none;
+    padding-top: 15px;
+}
+ul#btn-secondary li a {
+    font-size: 14px;
+}
+.box-shadow-bottom {
+    box-shadow: #bbbbbb -3px 3px 3px;
+}

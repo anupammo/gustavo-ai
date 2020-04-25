@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="management.company.css">
+    </link>
+    <title>Gustavo AI | Company Mamanagement</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white p-0">
+        <a class="navbar-brand bg-light px-3 py-2" href="#">
+            <img src="Gustavo-AI-favicon.png" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <ol class="navbar-nav mr-auto">
+                        <li class="breadcrumb-item text-secondary">
+                            <a class="text-muted card-link" href="#">Delos</a>
+                        </li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">Delos board's annual meeting</li>
+                    </ol>
+                </li>
+            </ul>
+            <a class="btn btn-outline-secondary rounded-circle my-sm-0 mr-4" href="#">
+                <i class="far fa-user"></i>
+            </a>
+        </div>
+    </nav>
+    <section class="my-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-11 col-10 px-0 my-2">
+                    <ul class="nav box-shadow-bottom py-3" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary badge badge-pill mx-3 p-2 bg-white rounded-pill"
+                                id="clients-tab" data-toggle="tab" href="#clients" role="tab" aria-controls="clients"
+                                aria-selected="true">
+                                <strong>Clients</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark badge badge-pill shadow-sm mx-3 p-2 bg-white rounded-pill active"
+                                id="companies-tab" data-toggle="tab" href="#companies" role="tab"
+                                aria-controls="companies" aria-selected="false">
+                                <strong>Companies</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary badge badge-pill mx-3 p-2 bg-white rounded-pill"
+                                id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects"
+                                aria-selected="false">
+                                <strong>Projects</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary badge badge-pill mx-3 p-2 bg-white rounded-pill"
+                                id="conversations-tab" data-toggle="tab" href="#conversations" role="tab"
+                                aria-controls="conversations" aria-selected="false">
+                                <strong>Conversations</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary badge badge-pill mx-3 p-2 bg-white rounded-pill"
+                                id="stakeholder-groups-tab" data-toggle="tab" href="#stakeholder-groups" role="tab"
+                                aria-controls="stakeholder-groups" aria-selected="false">
+                                <strong>Stakeholder groups</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary badge badge-pill p-2 bg-white rounded-pill" id="users-tab"
+                                data-toggle="tab" href="#users" role="tab" aria-controls="users" aria-selected="false">
+                                <strong>Users</strong>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content my-2" id="myTabContent">
+                        <div class="tab-pane fade" id="clients" role="tabpanel" aria-labelledby="clients-tab">
+                            ABC
+                        </div>
+                        <div class="tab-pane fade show active" id="companies" role="tabpanel"
+                            aria-labelledby="companies-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="nav box-shadow-bottom pb-3" id="btn-secondary" class="">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-secondary active" href="#">
+                                                <strong>Add a new company</strong>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-secondary" href="#">
+                                                <strong>See archived companies</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm text-secondary text-center align-middle"
+                                            id="company-management">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"><i class="fas fa-search"></i> ID</th>
+                                                    <th scope="col"><i class="fas fa-search"></i> Company</th>
+                                                    <th scope="col"><i class="fas fa-filter"></i> Role</th>
+                                                    <th scope="col"><i class="fas fa-filter"></i> Manager</th>
+                                                    <th scope="col"><i class="fas fa-filter"></i> Projects</th>
+                                                    <th scope="col"><i class="fas fa-filter"></i> Contracted by</th>
+                                                    <th scope="col"><i class="fas fa-filter"></i> Contractor of</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <i
+                                                            class="fas fa-people-arrows bg-light text-secondary rounded-circle p-2"></i>
+                                                    </td>
+                                                    <td class="bg-light align-middle">0001</td>
+                                                    <td class="align-middle">Sprite</td>
+                                                    <td class="bg-light align-middle">Client</td>
+                                                    <td class="align-middle">Legal support, Transciptionist</td>
+                                                    <td class="bg-light align-middle">EDMD,PVSP</td>
+                                                    <td class="align-middle">does not apply</td>
+                                                    <td class="bg-light align-middle">16 Technologies</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <i
+                                                            class="fas fa-people-arrows bg-light text-secondary rounded-circle p-2"></i>
+                                                    </td>
+                                                    <td class="bg-light align-middle">0002</td>
+                                                    <td class="align-middle">Peralta Leaga Research</td>
+                                                    <td class="bg-light align-middle">Client</td>
+                                                    <td class="align-middle">Legal support, Transciptionist</td>
+                                                    <td class="bg-light align-middle">EDMD,PVSP</td>
+                                                    <td class="align-middle">does not apply</td>
+                                                    <td class="bg-light align-middle">16 Technologies</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <i
+                                                            class="fas fa-people-arrows bg-light text-secondary rounded-circle p-2"></i>
+                                                    </td>
+                                                    <td class="bg-light align-middle">0003</td>
+                                                    <td class="align-middle">16 Technologies</td>
+                                                    <td class="bg-light align-middle">Client</td>
+                                                    <td class="align-middle">Legal support, Transciptionist</td>
+                                                    <td class="bg-light align-middle">EDMD,PVSP</td>
+                                                    <td class="align-middle">does not apply</td>
+                                                    <td class="bg-light align-middle">16 Technologies</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <i
+                                                            class="fas fa-people-arrows bg-light text-secondary rounded-circle p-2"></i>
+                                                    </td>
+                                                    <td class="bg-light align-middle">0004</td>
+                                                    <td class="align-middle">NextGen UX</td>
+                                                    <td class="bg-light align-middle">Client</td>
+                                                    <td class="align-middle">Legal support, Transciptionist</td>
+                                                    <td class="bg-light align-middle">EDMD,PVSP</td>
+                                                    <td class="align-middle">does not apply</td>
+                                                    <td class="bg-light align-middle">16 Technologies</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <i
+                                                            class="fas fa-people-arrows bg-light text-secondary rounded-circle p-2"></i>
+                                                    </td>
+                                                    <td class="bg-light align-middle">0005</td>
+                                                    <td class="align-middle">NY Consulting Group</td>
+                                                    <td class="bg-light align-middle">Client</td>
+                                                    <td class="align-middle">Legal support, Transciptionist</td>
+                                                    <td class="bg-light align-middle">EDMD,PVSP</td>
+                                                    <td class="align-middle">does not apply</td>
+                                                    <td class="bg-light align-middle">16 Technologies</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                            GHI
+                        </div>
+                        <div class="tab-pane fade" id="conversations" role="tabpanel"
+                            aria-labelledby="conversations-tab">
+                            DEF
+                        </div>
+                        <div class="tab-pane fade" id="stakeholder-groups" role="tabpanel"
+                            aria-labelledby="stakeholder-groups-tab">
+                            GHI
+                        </div>
+                        <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+                            DEF
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-2 px-0 my-2">
+                    <div class="col d-inline-block h-100">
+                        <ul class="nav flex-column float-right">
+                            <li class="nav-item my-2">
+                                <button type="button" class="close px-4" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column float-right">
+                            <li class="nav-item my-2">
+                                <a class="nav-link text-secondary" href="#">
+                                    <i class="fas fa-sliders-h fa-rotate-90"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link text-secondary" href="#">
+                                    <i class="fas fa-cloud-download-alt"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link text-secondary" href="#">
+                                    <i class="fas fa-magic"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link text-secondary" href="#">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link text-secondary" href="#">
+                                    <i class="fas fa-award"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-md-1 col-2 px-0"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5a489e57cf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
